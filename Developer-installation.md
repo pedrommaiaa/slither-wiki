@@ -14,3 +14,16 @@ workon slither-dev
 ```
 
 Update Slither by running `git pull` from the slither directory.
+
+
+If you are having problems insatlling on the macos m1, follow the next steps:
+
+1. Download Python 3.9.x from python.org
+2. Open your project with VS code
+3. On Terminal run `python3 -m venv env` to create virtual env
+4. Then run `source env/bin/activate`
+5. In VS Code, open the Command Palette (View > Command Palette or (⇧⌘P)). Then select the Python: Select Interpreter command:
+6. Choose the python version i.e. `Python 3.9.x 64-bit ('.venv':venv)` you downloaded
+7. On Terminal run `python -m pip install --upgrade pip`
+8. Then run `python -m pip install slither-analyzer`
+9. Finally run `slither .`
